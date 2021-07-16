@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+
+body 
+{
+    background: linear-gradient( #87C1CD, #87C1CD);
+    min-height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header .logo 
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header .navigation 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .navigation li 
+{
+    list-style: none;
+    margin-left: 20px;
+} 
+
+#header .navigation li a 
+{
+ text-decoration: none;
+ padding: 6px 15px;
+ color: #fff;
+ border-radius: 20px;
+}
+
+#header .navigation li a:hover,
+#header .navigation li a.active
+{
+    background: #fff;
+    color: #111;
+}
+
+section 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none ;
+}
+.sec {
+    position: relative;
+    padding: 3em;
+    background:#87C1CD;
+}
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+@media (max-width: 992px)
+{
+   #header 
+   {
+    padding: 20px;
+   } 
+   #header .logo 
+   {
+    font-size: 1.5em;
+   }
+   #header .navigation 
+   {
+    display: none;
+   }
+   .toggle 
+   {
+       position: relative;
+       width: 50px;
+       height: 50px;
+       background: url(assets/menu.png);
+       background-size: 50px;
+       background-position: center;
+       background-repeat: no-repeat;
+       z-index: 1000;
+   }
+   .toggle.active
+   {
+       background: url(assets/close.png);
+       background-size: 25px;
+       background-position: center;
+       background-repeat: no-repeat;
+   }
+}
