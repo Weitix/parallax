@@ -91,8 +91,17 @@ section img
     
 }
 
-
-
+section .s2  {
+    background: linear-gradient( to top, #442C24,transparent);
+    position: relative;
+    color: white;
+    z-index: 11;
+    }
+    section .s2 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer
+    }
 
 section img#sun 
 {
