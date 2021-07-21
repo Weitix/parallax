@@ -155,7 +155,7 @@ section img#cloud22
 @media (max-width: 992px)
 
 {
-
+    
     body 
     {
         width: 100%;
@@ -171,7 +171,7 @@ section img#cloud22
     .sec
     {
     position: relative;
-    padding: 40px;
+    padding: 35px;
     }
    #header 
    {
@@ -270,8 +270,8 @@ section img#cloud22
     }
     section img#sun
     {
-        transform: translateY(-150px);
-        z-index: 9;
+        transform: translateY(-90px);
+        z-index: 10;
     }
    
 }
