@@ -270,7 +270,7 @@ section img#cloud22
     }
     section img#sun
     {
-        transform: translateY(-150px);
+        
         z-index: 9;
     }
    
