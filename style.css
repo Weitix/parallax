@@ -147,9 +147,14 @@ section img#cloud22
     font-weight: 300;
 }
 
-@media (max-width: 1200px)
+@media (max-width: 992px)
 
 {
+
+    body 
+    {
+        width: 100%;
+    }
     section img
 {
     position: absolute;
@@ -255,7 +260,7 @@ section img#cloud22
     }
     section img#sun
     {
-        transform: translateY(-600px);
+        transform: translateY(-100px);
     }
    
 }
