@@ -171,7 +171,7 @@ section img#cloud22
     .sec
     {
     position: relative;
-    padding: 30px;
+    padding: 40px;
     }
    #header 
    {
@@ -253,7 +253,7 @@ section img#cloud22
     {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 90%;
         object-fit: cover;
         opacity: 55%;
         z-index: 10;
@@ -263,14 +263,14 @@ section img#cloud22
     {
         display: block;
         width: 100%;
-        height: 100%;
+        height:90%;
         object-fit: cover;
         opacity: 55%;
         z-index: 10;
     }
     section img#sun
     {
-        transform: translateY(-550px);
+        transform: translateY(-350px);
         z-index: 9;
     }
    
