@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>RD</title>
 </head>
 <body>
@@ -17,62 +19,77 @@
             <li><a href="#">Контакты</a></li>
         </ul>
     </header>
-    <section>
-        <img src="assets/cloud22.png" id="cloud22">
-        <img src="assets/cloud11.png" id="cloud11">
-        <img src="assets/cloud1.png" id="cloud1">
-        <img src="assets/cloud2.png" id="cloud2">
-        <img src="assets/sun.png" id="sun">
-        <img src="assets/back.png" id="back">
-        <img src="assets/mount.png" id="mount">
-        <img src="assets/front.png" id="front">
-    </section>    
-    <div class="sec">  
-      
-    <h2>red team disign</h2>
-        <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
-            Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет оценить значение новых предложений. Равным образом консультация с широким активом требуют определения и уточнения модели развития. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
-            Повседневная практика показывает, что реализация намеченных плано
-        
-        </p>
-       
     
-</div> 
-    <script>
-        
-        let cloud1 = document.getElementById('cloud1');
-        let cloud2 = document.getElementById('cloud2');
-        let cloud11 = document.getElementById('cloud11');
-        let cloud22 = document.getElementById('cloud22');
-        let sun = document.getElementById('sun');
-        let back = document.getElementById('back');
-        let mount = document.getElementById('mount');
-        let front = document.getElementById('front');
-        
-        //let header = document.getElementById('header')
+    
+    <section>
+        <div id="fullpage">    
+            <div class="section s1">
+                 <img src="assets/cloud22.png" id="cloud22">
+                  <img src="assets/cloud11.png" id="cloud11">
+                   <img src="assets/cloud1.png" id="cloud1">
+                    <img src="assets/cloud2.png" id="cloud2">
+                     <img src="assets/sun.png" id="sun">
+                      <img src="assets/back.png" id="back">
+                        <img src="assets/mount.png" id="mount">
+                         <img src="assets/front.png" id="front">
+            </div>
+            <div class="sec section s2 "> 
+                    <h2>red team disign</h2>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                                Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет оценить значение новых предложений. Равным образом консультация с широким активом требуют определения и уточнения модели развития. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+                        </p> 
+                </div>
+            </div> 
+    </section>
 
-    window.addEventListener('scroll', function(){
-        let value = window.scrollY;
+    
 
-            cloud22.style.paddingRight = value * 0.5 + '%';
-            cloud11.style.paddingLeft = value * 0.5 + '%';
+
+
+
+    <script>    
+            let cloud1 = document.getElementById('cloud1');
+            let cloud2 = document.getElementById('cloud2');
+            let cloud11 = document.getElementById('cloud11');
+            let cloud22 = document.getElementById('cloud22');
+            let sun = document.getElementById('sun');
+            let back = document.getElementById('back');
+            let mount = document.getElementById('mount');
+            let front = document.getElementById('front');
+
+                    window.addEventListener('scroll', function(){
+                        let value = window.scrollY;
+
+            cloud22.style.paddingRight = value * 0.4 + '%';
+             cloud11.style.paddingLeft = value * 0.5 + '%';
             cloud1.style.paddingLeft = value * 0.1 + '%';
-            cloud2.style.paddingRight = value * 0.1 + '%';
+             cloud2.style.paddingRight = value * 0.1 + '%';
             sun.style.bottom = value * -0.09 + '%';
-            back.style.bottom = value * -0.02 + '%';
+             back.style.bottom = value * -0.03 + '%';
             mount.style.bottom = value * -0.04 + '%'; 
-            front.style.bottom = value * 0 + '%';
-            
-            
-    })
-</script>
-<script>
-        const toggleMenu = document.querySelector('.toggle');
-        const navigation = document.querySelector('.navigation');
-        toggleMenu.onclick = function(){
-            toggleMenu.classList.toggle('active');
-            navigation.classList.toggle('active');
-        }
+             front.style.bottom = value * 0 + '%';
+        })
     </script>
+    
+        <script>
+            const toggleMenu = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.onclick = function(){
+                toggleMenu.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+new fullpage('#fullpage', {
+    scrollingSpeed: 1000,
+    autoScrolling: false,
+    fitToSection: true,
+    fitToSectionDelay: 200,
+    
+    
+})
+</script>
 </body>
 </html>

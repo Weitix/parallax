@@ -25,7 +25,7 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 100;
 }
 
 #header .logo 
@@ -85,11 +85,16 @@ section img
     width: 100%;
     pointer-events: none ;
 }
-
+section .s2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
 
 .sec {
+    top: -10px;
     position: relative;
-    padding: 100px;
+    padding: 10%;
     background:#db8514;
     z-index: 11;
     
@@ -246,9 +251,7 @@ section img#cloud22
        background-repeat: no-repeat;
        z-index: 10;
    }
-   element.style {
-    top: none;
-    }
+  
     section img#cloud11
     {
         display: block;
