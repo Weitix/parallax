@@ -85,16 +85,10 @@ section img
     width: 100%;
     pointer-events: none ;
 }
-section .s2 {
-    position: relative;
-    display: inline-block;
-    cursor: pointer
-}
+
 
 .sec {
-    top: -10px;
     position: relative;
-    padding: 10%;
     background:#db8514;
     z-index: 11;
     
@@ -157,7 +151,7 @@ section img#cloud22
     font-family: 'Open Sans', sans-serif;
 }
 
-@media (max-width: 992px)
+@media (max-width: 1200px)
 
 {
     
@@ -176,7 +170,7 @@ section img#cloud22
     .sec
     {
     position: relative;
-    padding: 35px;
+    padding: 0;
     }
    #header 
    {
@@ -251,7 +245,9 @@ section img#cloud22
        background-repeat: no-repeat;
        z-index: 10;
    }
-  
+   element.style {
+    top: none;
+    }
     section img#cloud11
     {
         display: block;
