@@ -169,8 +169,9 @@ section img#cloud22
     position: relative;
     padding-left: 35px;
     padding-right: 35px;
-    width: 100vw;
+    width: 150vw;
     height: 100vh;
+    vertical-align: middle;
     }
    #header 
    {
