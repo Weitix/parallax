@@ -88,10 +88,10 @@ section img
 
 
 .sec {
-    position: relative;
+    position: absolute;
     background:#db8514;
     z-index: 12;
-    vertical-align: bottom;
+    
     
 }
 
@@ -162,7 +162,7 @@ section img#cloud22
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 101%;
     pointer-events: none ;
     }
     .sec
