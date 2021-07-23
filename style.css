@@ -167,7 +167,8 @@ section img#cloud22
     .s2
     {
     position: relative;
-    bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
     }
    #header 
    {
