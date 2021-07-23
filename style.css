@@ -164,11 +164,13 @@ section img#cloud22
     width: 100%;
     pointer-events: none ;
     }
-    .sec
+    .s2
     {
     position: relative;
     padding-left: 35px;
     padding-right: 35px;
+    width: 100vw;
+    height: 100vh;
     }
    #header 
    {
