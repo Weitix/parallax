@@ -42,7 +42,7 @@
                 
             </div> 
             <div class="seca section s3">
-            <h2>technologi</h2>
+            <h2>technology</h2>
             <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
                  Идейные соображения высшего порядка  Идейные соображения высшего порядка
             </p> 
@@ -73,7 +73,7 @@
              //cloud11.style.paddingLeft = value * 0.5 + '%';
             cloud1.style.paddingLeft = value * 0.1 + '%';
              cloud2.style.paddingRight = value * 0.1 + '%';
-            sun.style.bottom = value * -0.09 + '%';
+            sun.style.bottom = value * -0.05 + '%';
              back.style.bottom = value * -0.03 + '%';
             mount.style.bottom = value * -0.04 + '%'; 
              front.style.bottom = value * 0 + '%';
@@ -95,8 +95,11 @@
 new fullpage('#fullpage', {
         scrollingSpeed: 1000,
         autoScrolling: false,
-        fitToSection:true,
-        
+        fitToSection: true,
+	    fitToSectionDelay: 1000,
+        normalScrollElements: '.s1, .s2, .s3',
+        paddingTop: '10em',
+        fixedElements: '.toggle',
 })
 </script>
 </body>
