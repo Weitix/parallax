@@ -148,8 +148,15 @@ section img#cloud22
 .sec p {
     font-size: 1em;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+}
+
+.seca 
+{
+     background: #41280a ;
+     z-index: 12;
+    
 }
 
 @media (max-width: 1200px)
@@ -167,8 +174,10 @@ section img#cloud22
     }
     .sec
     {
-    padding-left: 55px;
-    padding-right: 55px;
+    
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
     
     
     }
