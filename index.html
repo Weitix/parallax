@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.novacancy.min.js"></script>
     <title>RD</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
             <div class="sec section s2" id="ss"> 
                 <img src="assets/under1.png" class="under">
                 <img src="assets/under2.png" class="under1">
-                <h2>red team design</h2>
+                <h2 id="neonthis">red team design</h2>
                     <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
                          Идейные соображения высшего порядка  Идейные соображения высшего порядка
                     </p> 
@@ -53,7 +54,22 @@
         </div>
     </section>
 
-    
+    <script>
+    $(document).ready(function() {
+          $('#neonthis').novacancy({
+              'reblinkProbability': 0.4,
+    'blinkMin': 0.1,
+    'blinkMax': 0.4,
+    'loopMin': 1,
+    'loopMax': 2,
+    'color': '#5ED0BD',
+    'glow': ['0 0 80px #50C878', '0 0 30px #50C878', '0 0 6px #50C878'],
+    'off': 0,
+    'blink': 2,
+    'autoOn': true
+          });
+      });
+    </script>
 
 
 
@@ -93,6 +109,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
 new fullpage('#fullpage', {
         scrollingSpeed: 1000,
@@ -100,7 +117,9 @@ new fullpage('#fullpage', {
         fitToSection: true,
 	    fitToSectionDelay: 1000,
         normalScrollElements: '.s1, .s2, .s3',
+        
 })
 </script>
+
 </body>
 </html>
