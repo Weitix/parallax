@@ -24,7 +24,7 @@
     
     <section>
         <div id="fullpage">    
-            <div class="section s1">
+            <div class="section slide1">
                  <img src="assets/cloud22.png" id="cloud22">
                   <img src="assets/cloud11.png" id="cloud11">
                    <img src="assets/cloud1.png" id="cloud1">
@@ -35,26 +35,29 @@
                          <img src="assets/front.png" id="front">
             </div>
 
-            <div class="section s2" > 
-                <img src="assets/under1.png" class="under">
-                <img src="assets/under2.png" class="under1">
-                    <h2 id="neonthis">red team design</h2>
-                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.  
-                    </p> 
-                
+            <div class="section slide2" > 
+                <img src="assets/under1.png" class="underground1">
+                    <img src="assets/under2.png" class="underground2">
+                        <div class="textbox">
+                            <h2 id="neonthis">red team design</h2>
+                                <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.  
+                            </p> 
+                        </div>
             </div> 
-            <div class="section s3" >
-                <img src="assets/secondunder1.png" class="under">
-                <img src="assets/secondunder2.png" class="under1">
-                    <h2 id="neo">technology</h2>
-                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
-                    </p> 
-        
-    </div> 
+            <div class="section slide3" >
+                <img src="assets/secondunder1.png" class="underground1">
+                    <img src="assets/secondunder2.png" class="underground2">
+                        <div class="textbox">
+                            <h2 id="neo">technology</h2>
+                                <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
+                            </p> 
+                        </div>
+            </div> 
         </div>
     </section>
 
     <script>
+        //неоновые буквы 
     $(document).ready(function() {
           $('#neonthis, #neo').novacancy({
               'reblinkProbability': 0.4,
@@ -75,6 +78,7 @@
 
 
     <script>    
+            //parallax двигает объекты 
             let cloud1 = document.getElementById('cloud1');
             let cloud2 = document.getElementById('cloud2');
             let sun = document.getElementById('sun');
@@ -95,6 +99,7 @@
     </script>
     
         <script>
+            //кнопка меню для телефона
             const toggleMenu = document.querySelector('.toggle');
             const navigation = document.querySelector('.navigation');
             toggleMenu.onclick = function(){
@@ -107,15 +112,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
+    //scroll докрутка до секции 
 new fullpage('#fullpage', {
         scrollingSpeed: 1000,
         autoScrolling: false,
         fitToSection: true,
 	    fitToSectionDelay: 1000,
-        normalScrollElements: '.s1, .s2, .s3',
+        interlockedSlides: true,
         
 })
 </script>
-
 </body>
 </html>
