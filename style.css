@@ -197,9 +197,13 @@ section img#cloud22
 @media (max-width: 992px)
 
 {
+    .s1 ::before {
+        height: 1vh;
+        background: linear-gradient( to top, #A94F1B,transparent);
+    }
     body 
     {
-        width: 100%;
+        width: 101%;
         height: 100% ;
     }
    
@@ -216,7 +220,7 @@ section img#cloud22
        }
 
     h2 {
-        font-size: 3em;
+        font-size: 1.5em;
         color: #fff;
         text-align: center;
     }
@@ -225,7 +229,7 @@ section img#cloud22
     }
 
     #ss {
-        width: 100%;
+        width: 110%;
         padding-left: 25px;
         padding-right: 55px;
     }
