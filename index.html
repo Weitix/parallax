@@ -35,19 +35,20 @@
                          <img src="assets/front.png" id="front">
             </div>
 
-            <div class="sec section s2" id="ss"> 
+            <div class="section s2" > 
                 <img src="assets/under1.png" class="under">
                 <img src="assets/under2.png" class="under1">
-                <h2 id="neonthis">red team design</h2>
-                    <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.  
+                    <h2 id="neonthis">red team design</h2>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.  
                     </p> 
                 
             </div> 
-            <div class="seca section s3" id="ss">
-            <h2>technology</h2>
-            <p>Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
-                 Идейные соображения высшего порядка  Идейные соображения высшего порядка
-            </p> 
+            <div class="section s3" >
+                <img src="assets/secondunder1.png" class="under">
+                <img src="assets/secondunder2.png" class="under1">
+                    <h2 id="neo">technology</h2>
+                        <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
+                    </p> 
         
     </div> 
         </div>
@@ -55,7 +56,7 @@
 
     <script>
     $(document).ready(function() {
-          $('#neonthis').novacancy({
+          $('#neonthis, #neo').novacancy({
               'reblinkProbability': 0.4,
     'blinkMin': 0.1,
     'blinkMax': 0.4,
@@ -76,8 +77,6 @@
     <script>    
             let cloud1 = document.getElementById('cloud1');
             let cloud2 = document.getElementById('cloud2');
-            //let cloud11 = document.getElementById('cloud11');
-            //let cloud22 = document.getElementById('cloud22');
             let sun = document.getElementById('sun');
             let back = document.getElementById('back');
             let mount = document.getElementById('mount');
@@ -86,8 +85,6 @@
                     window.addEventListener('scroll', function(){
                         let value = window.scrollY;
 
-            ////cloud22.style.paddingRight = value * 0.4 + '%';
-             //cloud11.style.paddingLeft = value * 0.5 + '%';
             cloud1.style.paddingLeft = value * 0.1 + '%';
              cloud2.style.paddingRight = value * 0.1 + '%';
             sun.style.bottom = value * -0.05 + '%';
