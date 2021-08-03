@@ -191,7 +191,7 @@ section img#cloud22
 
 {
     .slide1 ::before {
-        height: 1vh;
+        height: 2vh;
         background: linear-gradient( to top, #A94F1B,transparent);
         z-index: 20;
     }
@@ -210,20 +210,19 @@ section img#cloud22
     }
    
     .underground1 {
-       object-fit: fill;
-       height: 100%;
-      
+       object-fit: cover;
+       height: 101%;
        z-index: 10;
   
       }
       .underground2 {
-        object-fit: fill;
-        height: 100%;
+        object-fit: cover;
+        height: 89%;
         z-index: 9;
        }
        
        .underground3 {
-        object-fit: fill;
+        object-fit: cover;
         height: 101%;
         z-index: 10;
         
