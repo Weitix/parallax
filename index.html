@@ -10,8 +10,8 @@
     <script src="jquery.novacancy.min.js"></script>
     <title>RD</title>
 </head>
-<body>
-    <header id="header">
+<body id="swape" >
+    <header id="header" >
         <a href="#" class="logo">Red Team</a>
         <div class="toggle"></div>
         <ul class="navigation">
@@ -45,8 +45,7 @@
                         </div>
             </div> 
             <div class="section slide3" >
-                <img src="assets/secondunder1.png" class="underground1">
-                    <img src="assets/secondunder2.png" class="underground2">
+                <img src="assets/secondunder1.png" class="underground3">
                         <div class="textbox">
                             <h2 id="neo">technology</h2>
                                 <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
@@ -79,6 +78,17 @@
 
     <script>    
             //parallax двигает объекты 
+            
+            /*if (classList == ("fp-viewing-0")) {
+                alert ("да")
+            }*/
+      
+           
+
+            if (document.getElementsByClassName(".section .slide1 .fp-section .active .fp-table .fp-completely ") === document.getElementsByClassName(".section .slide1 .fp-section .active .fp-table .fp-completely ")){
+    
+  
+
             let cloud1 = document.getElementById('cloud1');
             let cloud2 = document.getElementById('cloud2');
             let sun = document.getElementById('sun');
@@ -96,6 +106,7 @@
             mount.style.bottom = value * -0.04 + '%'; 
              front.style.bottom = value * 0 + '%';
         })
+    }
     </script>
     
         <script>
@@ -114,13 +125,20 @@
 <script>
     //scroll докрутка до секции 
 new fullpage('#fullpage', {
-        scrollingSpeed: 1000,
+        scrollingSpeed: 1500,
         autoScrolling: false,
         fitToSection: true,
 	    fitToSectionDelay: 1000,
         interlockedSlides: true,
+        touchSensitivity: 15,
+        bigSectionsDestination: null,
+        scrollOverflowReset: true,
+	    scrollOverflowOptions: null,
         
-})
+        
+});
+fullpage_api.setAllowScrolling(true);
+
 </script>
 </body>
 </html>
