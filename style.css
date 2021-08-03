@@ -211,7 +211,7 @@ section img#cloud22
    
     .underground1 {
        object-fit: cover;
-       height: 101%;
+       height: 100%;
        z-index: 10;
   
       }
