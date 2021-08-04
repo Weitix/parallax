@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="fullpage.min.css"/>
+    <link rel="stylesheet" href="fullpage.css"/>
+    <script src="fullpage.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="jquery.novacancy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -78,7 +82,7 @@
 
     <script>    
             //parallax двигает объекты 
-            function  Move() {
+            
             let cloud1 = document.getElementById('cloud1');
             let cloud2 = document.getElementById('cloud2');
             let sun = document.getElementById('sun');
@@ -96,7 +100,7 @@
             mount.style.bottom = value * -0.06 + 'vh'; 
              front.style.bottom = value * 0 + 'vh';
             })
-    }
+
          
     </script>
     
@@ -132,15 +136,14 @@ fullpage_api.setAllowScrolling(true);
 
 </script>
 <script>
-    var y = document.body.className;
+    /*var y = document.body.className;
     function upsd (){
         var s = document.body.className;
         if (s == y ){
             Move()
         }
     }
-    setInterval(upsd,1000);
-     
+    setInterval(upsd,1000);*/
 </script>
 </body>
 </html>
