@@ -191,8 +191,8 @@ section img#cloud22
 
 {
     .slide1 ::before {
-        height: 2vh;
-        background: linear-gradient( to top, #A94F1B,transparent);
+        height: 7px;
+        background: linear-gradient( to top, #a94f1bda,transparent);
         z-index: 20;
     }
     body 
