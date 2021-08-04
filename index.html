@@ -10,7 +10,7 @@
     <script src="jquery.novacancy.min.js"></script>
     <title>RD</title>
 </head>
-<body id="swape" >
+<body id="move" >
     <header id="header" >
         <a href="#" class="logo">Red Team</a>
         <div class="toggle"></div>
@@ -78,17 +78,7 @@
 
     <script>    
             //parallax двигает объекты 
-            
-            /*if (classList == ("fp-viewing-0")) {
-                alert ("да")
-            }*/
-      
-           
-
-            if (document.getElementsByClassName(".section .slide1 .fp-section .active .fp-table .fp-completely ") === document.getElementsByClassName(".section .slide1 .fp-section .active .fp-table .fp-completely ")){
-    
-  
-
+            function  Move() {
             let cloud1 = document.getElementById('cloud1');
             let cloud2 = document.getElementById('cloud2');
             let sun = document.getElementById('sun');
@@ -99,14 +89,15 @@
                     window.addEventListener('scroll', function(){
                         let value = window.scrollY;
 
-            cloud1.style.paddingLeft = value * 0.1 + '%';
-             cloud2.style.paddingRight = value * 0.1 + '%';
-            sun.style.bottom = value * -0.05 + '%';
-             back.style.bottom = value * -0.03 + '%';
-            mount.style.bottom = value * -0.04 + '%'; 
-             front.style.bottom = value * 0 + '%';
-        })
+            cloud1.style.paddingLeft = value * 0.1 + 'vh';
+             cloud2.style.paddingRight = value * 0.1 + 'vh';
+            sun.style.bottom = value * -0.1 + '%';
+             back.style.bottom = value * -0.03 + 'vh';
+            mount.style.bottom = value * -0.06 + 'vh'; 
+             front.style.bottom = value * 0 + 'vh';
+            })
     }
+         
     </script>
     
         <script>
@@ -139,6 +130,17 @@ new fullpage('#fullpage', {
 });
 fullpage_api.setAllowScrolling(true);
 
+</script>
+<script>
+    var y = ("fp-viewing-2");
+    function upsd (){
+        let s = document.body.className;
+        if (s != y ){
+            Move()
+        }
+    }
+    setInterval(upsd,1000);
+     
 </script>
 </body>
 </html>
