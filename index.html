@@ -11,7 +11,6 @@
     <script src="fullpage.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="jquery.novacancy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>RD</title>
 </head>
 <body id="move" >
@@ -24,8 +23,6 @@
             <li><a href="#">Контакты</a></li>
         </ul>
     </header>
-    
-    
     <section>
         <div id="fullpage">    
             <div class="section slide1 fp-auto-height-responsive">
@@ -77,9 +74,6 @@
       });
     </script>
 
-
-
-
     <script>    
             //parallax двигает объекты 
             
@@ -93,12 +87,12 @@
                     window.addEventListener('scroll', function(){
                         let value = window.scrollY;
 
-            cloud1.style.paddingLeft = value * 0.1 + 'vh';
-             cloud2.style.paddingRight = value * 0.1 + 'vh';
+            cloud1.style.paddingLeft = value * 0.1 + '%';
+             cloud2.style.paddingRight = value * 0.1 + '%';
             sun.style.bottom = value * -0.1 + '%';
-             back.style.bottom = value * -0.03 + 'vh';
-            mount.style.bottom = value * -0.06 + 'vh'; 
-             front.style.bottom = value * 0 + 'vh';
+             back.style.bottom = value * -0.03 + '%';
+            mount.style.bottom = value * -0.06 + '%'; 
+             front.style.bottom = value * 0 + '%';
             })
 
          
@@ -113,23 +107,13 @@
                 navigation.classList.toggle('active');
             }
         </script>
-
-
-
-
 <script>
     //scroll докрутка до секции 
-new fullpage('#fullpage', {
-        scrollingSpeed: 1500,
-        autoScrolling: false,
-        touchSensitivity:55,
-        
-        
-        
-        
-});
-fullpage_api.setAllowScrolling(true);
-
+        new fullpage('#fullpage', {
+                scrollingSpeed: 1500,
+                autoScrolling: false,  
+                touchSensitivity: 15,
+        });
 </script>
 <script>
     /*var y = document.body.className;
