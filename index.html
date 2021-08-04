@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="jquery.novacancy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>RD</title>
 </head>
 <body id="move" >
@@ -24,7 +25,7 @@
     
     <section>
         <div id="fullpage">    
-            <div class="section slide1">
+            <div class="section slide1 fp-auto-height-responsive">
                  <img src="assets/cloud22.png" id="cloud22">
                   <img src="assets/cloud11.png" id="cloud11">
                    <img src="assets/cloud1.png" id="cloud1">
@@ -35,7 +36,7 @@
                          <img src="assets/front.png" id="front">
             </div>
 
-            <div class="section slide2" > 
+            <div class="section slide2 fp-auto-height-responsive" > 
                 <img src="assets/under1.png" class="underground1">
                     <img src="assets/under2.png" class="underground2">
                         <div class="textbox">
@@ -44,7 +45,7 @@
                             </p> 
                         </div>
             </div> 
-            <div class="section slide3" >
+            <div class="section slide3 fp-auto-height-responsive" >
                 <img src="assets/secondunder1.png" class="underground3">
                         <div class="textbox">
                             <h2 id="neo">technology</h2>
@@ -111,7 +112,7 @@
         </script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 <script>
     //scroll докрутка до секции 
@@ -119,9 +120,9 @@ new fullpage('#fullpage', {
         scrollingSpeed: 1500,
         autoScrolling: false,
         fitToSection: true,
-	    fitToSectionDelay: 1000,
+	    
         interlockedSlides: true,
-        touchSensitivity: 15,
+        touchSensitivity:55,
         bigSectionsDestination: null,
         scrollOverflowReset: true,
 	    scrollOverflowOptions: null,
@@ -132,10 +133,10 @@ fullpage_api.setAllowScrolling(true);
 
 </script>
 <script>
-    var y = ("fp-viewing-2");
+    var y = document.body.className;
     function upsd (){
-        let s = document.body.className;
-        if (s != y ){
+        var s = document.body.className;
+        if (s == y ){
             Move()
         }
     }
