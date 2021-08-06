@@ -122,13 +122,13 @@ section img#front
 
 section img#cloud1
 {
-    opacity: 55%;
+    opacity: 70%;
     z-index: 11;
 }
 section img#cloud2
 {
     
-    opacity: 55%;
+    opacity: 30%;
     z-index: 11;
 }
 
@@ -173,12 +173,8 @@ section img#cloud22
     height: 100%;
     z-index: 10;
    }
-   .underground2 {
-     object-fit: fill;
-     height: 100%;
-     z-index: 9;
-    }
-    .underground3 {
+   
+    .underground2 {
         object-fit: fill;
         width: 100%;
         height: 101%;
@@ -211,17 +207,13 @@ section img#cloud22
    
     .underground1 {
        object-fit: cover;
-       height: 100%;
+       height: 101%;
        z-index: 10;
   
       }
-      .underground2 {
-        object-fit: cover;
-        height: 89%;
-        z-index: 9;
-       }
+     
        
-       .underground3 {
+       .underground2 {
         object-fit: cover;
         height: 101%;
         z-index: 10;
@@ -347,8 +339,8 @@ section img#cloud22
     }
     section img#sun
     {
-        transform: translateY(-200px);
-        z-index: 11;
+        transform: translateY(-330px);
+        z-index: 7;
     }
    
 }
