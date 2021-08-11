@@ -183,12 +183,12 @@ section img#cloud22
        }
       
 
-@media (max-width: 1200px)
+@media (max-width: 992px)
 
 {   
     .slide1 ::before {
         height: 2vh;
-        background: linear-gradient( to top, #a94f1b,transparent);
+        background: linear-gradient( to top, #b65720,transparent);
         z-index: 20;
     }
     body 
