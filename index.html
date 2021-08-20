@@ -22,7 +22,7 @@
     </header>
     <section>
         <div id="fullpage">    
-            <div class="section slide1 fp-auto-height-responsive">
+            <div class="section slide1">
                  <img src="assets/cloud2.png" id="cloud22">
                   <img src="assets/cloud1.png" id="cloud11">
                    <img src="assets/cloud1.png" id="cloud1">
@@ -33,18 +33,29 @@
                          <img src="assets/front.png" id="front">
             </div>
 
-            <div class="section slide2 fp-auto-height-responsive" > 
+            <div class="section slide2" > 
                 <img src="assets/under1.png" class="underground1">
-                        <div class="textbox">
+                        <div class="text box">
+                            
                             <h2 id="neonthis"><br>red team <br>design</h2>
                                 <p>Повседневная практика показывает, <br>что реализация намеченных плановых заданий в<br> значительной степени обуславливает создание модели развития. 
                             </p> 
                         </div>
             </div> 
-            <div class="section slide3 fp-auto-height-responsive" >
+            <div class="section slide3" >
+                
                 <img src="assets/secondunder1.png" class="underground2">
-                        <div class="textbox">
+                        <div class="text box">
                             <h2 id="neo">technology</h2>
+                                <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
+                            </p> 
+                        </div>
+            </div> 
+            <div class="section slide4" >
+                <img src="assets/lightOff.png" class="lightOff">
+                <img src="assets/deepunderoff.png" class="underground2">
+                        <div class="text box">
+                            <h2 id="nei">innovation</h2>
                                 <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
                             </p> 
                         </div>
@@ -54,7 +65,7 @@
 
     <script>
         //неоновые буквы 
-    $(document).ready(function() {
+    function neos() {$(document).ready(function () {
           $('#neonthis, #neo').novacancy({
               'reblinkProbability': 0.4,
     'blinkMin': 0.1,
@@ -67,8 +78,63 @@
     'blink': 2,
     'autoOn': true
           });
-      });
+      });}
+
+      neos ()
     </script>
+
+    <script>
+
+    const boxes = document.querySelectorAll('.box ');
+    
+
+        window.addEventListener('scroll', checkBoxes);
+
+        checkBoxes(); 
+
+        function checkBoxes() {
+        const triggerBottom = (window.innerHeight / 5 * 4);
+        
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+            
+            if(boxTop < triggerBottom) {
+            box.classList.add('show');
+            } else {
+            box.classList.remove('show');
+            }
+
+      
+        })
+}
+        
+    </script>
+        <script>
+
+            const lights = document.querySelectorAll('.lightOff ');
+            
+        
+                window.addEventListener('scroll', checklight);
+        
+                checklight(); 
+        
+                function checklight() {
+                const triggerBottom = (window.innerHeight / 15);
+                
+                lights.forEach(lightOff => {
+                    const lightOffTop = lightOff.getBoundingClientRect().top;
+                    
+                    if(lightOffTop < triggerBottom) {
+                        lightOff.classList.add('show');
+                    } else {
+                        lightOff.classList.remove('show');
+                    }
+        
+              
+                })
+        }
+                
+            </script>
 
     <script>    
             //parallax двигает объекты 
