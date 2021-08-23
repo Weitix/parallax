@@ -22,7 +22,7 @@
     </header>
     <section>
         <div id="fullpage">    
-            <div class="section slide1">
+            <div class="section slide1 ">
                  <img src="assets/cloud2.png" id="cloud22">
                   <img src="assets/cloud1.png" id="cloud11">
                    <img src="assets/cloud1.png" id="cloud1">
@@ -33,7 +33,7 @@
                          <img src="assets/front.png" id="front">
             </div>
 
-            <div class="section slide2" > 
+            <div class="section slide2 " > 
                 <img src="assets/under1.png" class="underground1">
                         <div class="text box">
                             
@@ -42,7 +42,7 @@
                             </p> 
                         </div>
             </div> 
-            <div class="section slide3" >
+            <div class="section slide3 " >
                 
                 <img src="assets/secondunder1.png" class="underground2">
                         <div class="text box">
@@ -51,8 +51,17 @@
                             </p> 
                         </div>
             </div> 
-            <div class="section slide4" >
+            <div class="section slide4 " >
                 <img src="assets/lightOff.png" class="lightOff">
+                <img src="assets/deepunderoff.png" class="underground2">
+                        <div class="text box">
+                            <h2 id="nei">innovation</h2>
+                                <p>Повседневная практика показывает, что реализация намеченных плановых заданий 
+                            </p> 
+                        </div>
+            </div> 
+            <div class="section slide5  " >
+                <img src="assets/lightOff.png" class="lightOff ">
                 <img src="assets/deepunderoff.png" class="underground2">
                         <div class="text box">
                             <h2 id="nei">innovation</h2>
@@ -85,56 +94,29 @@
 
     <script>
 
-    const boxes = document.querySelectorAll('.box ');
+const boxes = document.querySelectorAll('.box');
+
+window.addEventListener('scroll', checkBoxes);
+
+checkBoxes(); // shows initial box(es) 
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5 * 4);
+  
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
     
-
-        window.addEventListener('scroll', checkBoxes);
-
-        checkBoxes(); 
-
-        function checkBoxes() {
-        const triggerBottom = (window.innerHeight / 5 * 4);
-        
-        boxes.forEach(box => {
-            const boxTop = box.getBoundingClientRect().top;
-            
-            if(boxTop < triggerBottom) {
-            box.classList.add('show');
-            } else {
-            box.classList.remove('show');
-            }
-
-      
-        })
+    if(boxTop < triggerBottom) {
+      box.classList.add('show');
+    } else {
+      box.classList.remove('show');
+    }
+  })
 }
+
         
     </script>
-        <script>
-
-            const lights = document.querySelectorAll('.lightOff ');
-            
-        
-                window.addEventListener('scroll', checklight);
-        
-                checklight(); 
-        
-                function checklight() {
-                const triggerBottom = (window.innerHeight / 15);
-                
-                lights.forEach(lightOff => {
-                    const lightOffTop = lightOff.getBoundingClientRect().top;
-                    
-                    if(lightOffTop < triggerBottom) {
-                        lightOff.classList.add('show');
-                    } else {
-                        lightOff.classList.remove('show');
-                    }
-        
-              
-                })
-        }
-                
-            </script>
+       
 
     <script>    
             //parallax двигает объекты 
@@ -196,7 +178,6 @@
 	offsetSections: false,
 	resetSliders: false,
 	fadingEffect: false,
-	normalScrollElements: '#element1, .element2',
 	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
@@ -253,6 +234,9 @@
         }
     }
     setInterval(upsd,1000);*/
+</script>
+<script>
+    
 </script>
 </body>
 </html>
